@@ -9,6 +9,7 @@ class SettingsTest < Test::Unit::TestCase
 
   $driver = nil
 
+  # Setup
   def setup
     caps = {
         caps: {
@@ -28,6 +29,7 @@ class SettingsTest < Test::Unit::TestCase
     driver.start_driver.manage.timeouts.implicit_wait = 20 # seconds
   end
 
+  # Quit driver after test
   def teardown
     driver_quit
   end
