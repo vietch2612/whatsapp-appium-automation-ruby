@@ -5,7 +5,7 @@ require 'appium_lib'
 class SettingsTest < Test::Unit::TestCase
 
   # Patch to your file
-  APP_PATCH = 'Apk/com.whatsapp.app.Apk'
+  APP_PATCH = '../Apk/com.whatsapp.app.apk'
 
   $driver = nil
 
